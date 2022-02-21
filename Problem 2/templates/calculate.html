@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Calculate</h1>
+{% if type %}
+<h2>{{number}} is {{ type }}</h2>
+{% else %}
+<h2>No number provided! </h2>
+{% endif %}
+<a href="/">Go back home</a>
+{% endblock %}

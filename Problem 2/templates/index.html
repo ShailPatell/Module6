@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <h1>Home</h1>
+  <p>Enter a integer to find out if it is even or odd!</p>
+  <form action="/calculate">
+    <label for="number">Number</label>
+    <input type="text" id="number" name="number">
+    <input type="submit" value="Submit">
+  </form> 
+{% endblock %}

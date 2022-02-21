@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+ 
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/"> <u>Home</u>  <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="/register"> <u>Register</u> </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+<h1>
+    Names:
+</h1>
+<ul>
+    {% for students in students %}
+    
+    
+    <li>
+       
+        {{students}}
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>
+    Organizations:
+</h2>
+<ul>
+    {% for organizations in organizations %}
+    
+    <li>
+       
+        {{organizations}}
+    </li>
+    {% endfor %}
+</ul>
+
+
+
+<a href="/">Go back home</a>
+{% endblock %}
